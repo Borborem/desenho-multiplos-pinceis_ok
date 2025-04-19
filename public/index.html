@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Seleção de Pincéis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginScreen">
+    <input id="nameInput" placeholder="Seu nome">
+    <input id="roomInput" placeholder="Nome da sala">
+    <button id="joinBtn">Entrar</button>
+  </div>
+
+  <div id="controls">
+    <input type="color" id="colorPicker" value="#000000">
+    <input type="range" id="lineWidthSlider" min="5" max="50" value="20">
+    <input type="range" id="opacitySlider" min="0.05" max="1" step="0.05" value="0.5">
+    <select id="brushSelect">
+      <option value="aquarela">Aquarela</option>
+      <option value="marcador">Marcador</option>
+      <option value="spray">Spray</option>
+    </select>
+    <button id="eraserBtn" style="position:fixed;top:10px;left:560px;z-index:10;">🧽</button>
+    <button id="saveBtn" style="position:fixed;top:10px;left:620px;z-index:10;">💾</button>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>

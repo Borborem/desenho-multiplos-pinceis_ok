@@ -1,0 +1,91 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#loginScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#loginScreen input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#loginScreen button {
+  padding: 10px 20px;
+}
+
+#loginScreen {
+  background: #f5f5f5;
+}
+
+#loginScreen form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+input[type="color"],
+input[type="range"],
+select {
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  #loginScreen input {
+    width: 80%;
+  }
+
+  #loginScreen button {
+    width: 80%;
+  }
+}
+
+#saveBtn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* [ 🎨Cor ][⬛ Tamanho ][🌫️ Opacidade ][🖌️ Pincel ]
+   10px   +110px      +140px         +140px */
+   #controls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+  }
+  #controls input,
+  #controls select {
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  

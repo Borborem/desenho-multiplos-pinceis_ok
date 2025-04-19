@@ -1,0 +1,14 @@
+
+{
+  "name": "pinceis-multiplos-realtime",
+  "version": "1.0.0",
+  "description": "Ferramenta de desenho com múltiplos pincéis em tempo real",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}
